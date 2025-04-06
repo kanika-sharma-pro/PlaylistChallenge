@@ -27,6 +27,10 @@ public class Music {
         //number of button presses to go down
         int forwardPresses = 0;
         int currentIndex = startIndex;//start from the starting index
-
+//while loop until the index reaches the target song index
+        while (currentIndex != qIndex) {
+            currentIndex = (currentIndex + 1) % n; // move to next song
+            forwardPresses++;
+        }
     }
 }
